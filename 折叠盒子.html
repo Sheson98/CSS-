@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+           <div class="face face1">
+            <h2>What would you want?</h2>
+            <p>Once upon a time, there was a small village situated in the heart of a dense forest. People living in the village were simple and content with their way of living. They used to work hard in the fields and were happy with whatever they had.</p>
+           </div>
+            <div class="face face2">
+                01
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+             <h2>What would you want?</h2>
+             <p>Once upon a time, there was a small village situated in the heart of a dense forest. People living in the village were simple and content with their way of living. They used to work hard in the fields and were happy with whatever they had.</p>
+            </div>
+             <div class="face face2">
+                 01
+             </div>
+         </div>
+         <div class="card">
+            <div class="face face1">
+             <h2>What would you want?</h2>
+             <p>Once upon a time, there was a small village situated in the heart of a dense forest. People living in the village were simple and content with their way of living. They used to work hard in the fields and were happy with whatever they had.</p>
+            </div>
+             <div class="face face2">
+                 01
+             </div>
+         </div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        position:relative;
+        margin: 0;
+        padding: 0 ;
+        height: 100vh;
+        background:linear-gradient(45deg,#202733,#215629);
+    }
+    .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    
+    }
+    .card {
+        max-width: 20%;
+        aspect-ratio: 1/1.4;
+       box-shadow: 2px 4px 10px rgba(1, 1, 1, 0.5);
+       position: relative;
+       background-color: #fff;
+    }
+    .face2{
+        text-align: center;
+        font-size: 150px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        color: white;
+
+    }
+    .face2::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left ,#19282f 0,#fff 50%,#d3eca7 51%); 
+        transition: all 0.8s ease-out; 
+    }
+    .face2:hover::after,.face2{
+        top: 90%;
+        height: 10%;
+        font-size: 18px;
+        color: #000;
+        
+    } 
+  .face1{
+    padding: 30px;
+  }
+ 
+
+
+
+    h2{
+        margin: 0;
+
+    }
+</style>

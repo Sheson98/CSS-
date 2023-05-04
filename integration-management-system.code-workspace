@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "D:/work/integration-management-system"
+		},
+		{
+			"path": "D:/work/car-info-management"
+		},
+		{
+			"path": ".."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Desktop"
+    }
+}
